@@ -3,7 +3,12 @@ function getTotalBooksCount(books) {
 }
 
 function getTotalAccountsCount(accounts) {
-  return accounts.length
+  let total = 0
+  for (let account in accounts){
+    total ++
+  }
+//   return accounts.length
+  return total
 }
 
 function getBooksBorrowedCount(books) {
